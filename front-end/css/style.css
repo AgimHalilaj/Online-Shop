@@ -1,0 +1,5 @@
+body { font-family: Arial; margin: 0; text-align: center; }
+nav { background: black; padding: 10px; }
+nav a { color: white; margin: 10px; text-decoration: none; }
+footer { background: black; color: white; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+form input, textarea { margin: 5px; padding: 5px; width: 200px; }
