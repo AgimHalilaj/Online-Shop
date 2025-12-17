@@ -1,42 +1,87 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>News</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News - Online Tech Shop</title>
 <link rel="stylesheet" href="css/style.css">
+<style>
+
+/* ONLY FOR NEWS OVERLAY ON HERO */
+
+.news-overlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    z-index: 2;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.news-overlay h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.news-overlay p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #111;
+    line-height: 1.4;
+}
+
+</style>
 </head>
 <body>
 
-<nav>
+<nav class="navbar">
+    <div class="logo">TECH SHOP</div>
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="news.html">News</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="login.html">Login</a>
-    </nav>
+    </div>
+</nav>
 
-<h1>Latest News</h1>
-<p>New tech products coming soon.</p>
+<section class="hero">
+    <div class="hero-bg">
+        <img src="images/hero.jpg" class="hero-img" alt="Tech Shop">
+    </div>
 
-<footer>© 2025</footer>
+    <div class="hero-text">
+        <h1>Latest News</h1>
+        <p>Stay updated with tech news & offers</p>
+    </div>
+
+    <!-- News content ON TOP OF HERO IMAGE -->
+    <div class="news-overlay">
+        <div class="news-item">
+            <h3>New Laptop Release</h3>
+            <p>We have just released our new gaming laptop series with improved cooling and graphics performance. Check specs and availability now!</p>
+        </div>
+        <div class="news-item">
+            <h3>Smartphone Deals</h3>
+            <p>Don’t miss out on this week’s discounted smartphone offers. High end models at unbeatable prices for a limited time!</p>
+        </div>
+        <div class="news-item">
+            <h3>Headphones Back in Stock</h3>
+            <p>Our best selling headphones are back in stock. Enjoy premium sound quality and comfort — grab yours while they last!</p>
+        </div>
+    </div>
+</section>
+
+<footer>© 2025 Online Tech Shop</footer>
+
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head>
-<title>News</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<nav>same navbar</nav>
-
-<h1>Latest News</h1>
-<p>New tech products coming soon.</p>
-
-<footer>© 2025</footer>
-</body>
-</html>
-

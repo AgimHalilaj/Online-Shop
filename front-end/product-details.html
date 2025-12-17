@@ -1,25 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Product Details</title>
-<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Product Details - Online Tech Shop</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+/* Slider styling */
+.slider {
+    max-width: 600px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.slides img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.slides img.active {
+    display: block;
+}
+
+.slider-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-buttons button {
+    background-color: #00c3ff;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    margin: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+</style>
 </head>
 <body>
 
-<nav>
+<nav class="navbar">
+    <div class="logo">TECH SHOP</div>
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="news.html">News</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="login.html">Login</a>
-    </nav>
+    </div>
+</nav>
+
+<section class="hero">
+    <img src="images/hero.jpg" alt="Tech Shop" class="hero-img">
+    <div class="hero-text">
+        <h1 id="product-title">Product not found</h1>
+    </div>
+</section>
 
 
-<h1>Laptop Details</h1>
-<p>High performance laptop</p>
-<p>Price: €900</p>
+<footer>© 2025 Online Tech Shop</footer>
 
-<footer>© 2025</footer>
+
+
 </body>
 </html>

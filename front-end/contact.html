@@ -1,31 +1,45 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Online Tech Shop</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
+<nav class="navbar">
+    <div class="logo">TECH SHOP</div>
+    <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="news.html">News</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
         <a href="login.html">Login</a>
-    </nav>
+    </div>
+</nav>
 
-<h1>Contact Us</h1>
+<section class="hero">
+    <img src="images/hero.jpg" alt="Tech Shop" class="hero-img">
+    <div class="form-overlay">
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
 
-<form id="contactForm">
-<input type="text" id="name" placeholder="Name"><br>
-<input type="email" id="email" placeholder="Email"><br>
-<textarea id="message" placeholder="Message"></textarea><br>
-<button type="submit">Send</button>
-</form>
-
-<script src="js/contact.js"></script>
+<footer>© 2025 Online Tech Shop</footer>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    const message = document.getElementById("message");
+    if(message.value.length < 5){ alert("Message too short"); }
+    else{ alert("Message sent"); message.value = ""; }
+});
+</script>
 </body>
 </html>
